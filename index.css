@@ -1,0 +1,120 @@
+body { 
+    color: white;
+    background-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px; /* Reduz o tamanho da fonte */
+        margin: 10px; /* Reduz a margem */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px; /* Fonte ainda menor */
+        margin: 5px; /* Margem menor */
+    }
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+    margin: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #4154a77e;
+}
+
+.center {
+    text-align: center;
+}
+
+h1 {
+    color: azure;
+}
+
+footer {
+    color: #4154a77e;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.counter {
+    text-align: center;
+}
+
+.container {
+    padding: 0px 50px;
+}
+
+.checklist-container {
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.checklist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.checklist li {
+    width: calc(30% - 20px);
+    background: #333333;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #4154a77e;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background 0.3s ease;
+}
+
+.checklist li:hover {
+    background: #4154a77e;
+}  
+
+label {
+    flex-grow: 1;
+    margin-left: 10px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.5);
+}
+
+/* Ajustes responsivos para .checklist */
+@media screen and (max-width: 768px) {
+    .checklist li {
+        width: calc(45% - 20px); /* Reduz a largura para 2 colunas */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .checklist li {
+        width: 100%; /* Ocupa a largura total no celular */
+    }
+}
